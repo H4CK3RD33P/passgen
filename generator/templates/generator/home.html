@@ -1,0 +1,28 @@
+<center><h1>### Password Generator ###</h1>
+<h4>by Subhodeep Sarkar</h4>
+<form action="{% url 'password' %}">
+    <select name='length'>
+        <option value='4'>4</option>
+        <option value='5'>5</option>
+        <option value='6'>6</option>
+        <option value='7'>7</option>
+        <option value='8'>8</option>
+        <option value='9'>9</option>
+        <option value='10'>10</option>
+        <option value='11'>11</option>
+        <option value='12'>12</option>
+    </select> Password Length
+    <br>
+    What should it contain?
+    <br>
+    <input type='checkbox' name='uppercase'>Uppercase alphabets
+    <br>
+    <input type='checkbox' name='lowercase'>Lowercase alphabets
+    <br>
+    <input type='checkbox' name='digit'>Digits
+    <br>
+    <input type='checkbox' name='special'>Special characters
+    <br>
+    <input type='submit' value='Generate Password'>
+</form>
+</center>
